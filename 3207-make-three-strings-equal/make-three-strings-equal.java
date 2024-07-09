@@ -13,6 +13,8 @@ class Solution {
                 break;
             }
         }
-        return i==0 ? -1 : (len1+len2+len3) - (i+j+k);
+        if(i==0) return -1;
+        else return (len1+len2+len3) - (i+j+k);
+        
     }
 }
